@@ -5,7 +5,7 @@ function navBar() {
 
     navBarElements.innerHTML = navBarContents;
 
-    const logoLink = ["./images/My Logo(V2-Dark) (2).webp"];
+    const logoLink = ["./My Logo(V2-Dark) (2).webp"];
 
     document.getElementById("image-logo").src = logoLink;
 }
