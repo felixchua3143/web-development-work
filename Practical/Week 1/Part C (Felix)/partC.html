@@ -3,15 +3,14 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="photography" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="photography">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./photo.css" />
 
-    <link rel="stylesheet" href="./photo.css">
-
-    <title> About Me </title>
+    <title>About Me</title>
 
     <style>
         .wrapper {
@@ -23,16 +22,19 @@
         }
 
         .image {
-            justify-self: end;
-            margin: 0%;
-            min-width: auto;
+            margin-left: 65%;
         }
 
         .words {
-            font-family: 'Roboto Slab', sans-serif;
+            font-family: "Roboto Slab", sans-serif;
             font-size: 175%;
             color: white;
             margin-left: 2%;
+        }
+
+        .photo-link {
+            display: inline-block;
+            width: fit-content;
         }
 
         .link {
@@ -47,36 +49,129 @@
             transition: all 250ms ease;
         }
     </style>
-
 </head>
 
 <body>
 
     <nav id="nav-bar">
 
-    </nav>
+        <div class="logo">
 
+            <a class="image-link" href="about-me.html">
+
+                <img id="image-logo" src="./My Logo(V2-Dark) (2).webp" />
+
+            </a>
+
+        </div>
+
+        <ul id="nav-list">
+
+            <li class="nav-list-item">
+
+                <a class="nav-item" href="index.html"> Home </a>
+
+            </li>
+
+            <li class="nav-list-item">
+
+                <details>
+
+                    <summary class="nav-item-dropdown">Photos</summary>
+
+                    <div class="dropdown-menu">
+
+                        <a class="dropdown-content" href="all-photos.html" style="color: white">
+                            All
+                        </a>
+
+                        <a class="dropdown-content" href="event-photos.html"> Events </a>
+
+                        <a class="dropdown-content" href="people-photos.html"> People </a>
+
+                        <a class="dropdown-content" href="animal-photos.html">
+                            Animals
+                        </a>
+
+                    </div>
+
+                </details>
+
+            </li>
+
+            <li class="nav-list-item">
+
+                <details>
+
+                    <summary class="nav-item-dropdown">Contact</summary>
+
+                    <div class="dropdown-menu">
+
+                        <a target="_blank" class="dropdown-content" href="https://www.instagram.com/felixchua3141/">
+                            Insta
+                        </a>
+
+                    </div>
+
+                </details>
+
+            </li>
+
+            <li class="nav-list-item">
+
+                <a class="nav-item" href="about-me.html"> About Me </a>
+
+            </li>
+
+        </ul>
+
+        <footer>
+
+            <div id="copyright">
+
+                <p class="copyright-text">
+
+                    All photos shown being to
+                    <a class="links" href="about-me.html">Felix Chua</a>, do not steal
+                    or copy the photos for commerical gain.
+
+                </p>
+
+            </div>
+
+        </footer>
+
+    </nav>
 
     <section class="big-wrapper">
 
         <main class="wrapper">
 
-            <img class="image" src="20230324_181106.webp">
+            <a class="photo-link" href="https://www.instagram.com/felixchua3141/">
+                <img class="image" src="20230324_181106.webp" />
+            </a>
 
             <div class="words">
 
                 <p class="text">
 
-                    Hello, I am Felix Chua and this is my website! <br />
+                    <h1> Hello! </h1>
 
-                    If you are here, thanks for (presumably) looking at <a class="link" href="allphotos.html">my
-                        work</a> first! <br /><br />
+                    I am Felix Chua and this is my website! <br />
 
-                    I am a beginner photographer based in Singapore, <br /> currently focusing on event photography but
-                    am open to any kind of photography. <br /><br />
+                    If you are here, thanks for (presumably) looking at
+                    <a class="link" href="allphotos.html">my work</a> first!
+                    <br /><br />
 
-                    If you want to contact me, check me out on <a class="link"
-                        href="https://www.instagram.com/felixchua3141/"> Instagram! </a> <br /><br />
+                    I am a beginner photographer based in Singapore, <br />
+                    currently focusing on event photography but am open to any kind of
+                    photography. <br /><br />
+
+                    If you want to contact me, check me out on
+                    <a class="link" href="https://www.instagram.com/felixchua3141/">
+                        Instagram!
+                    </a>
+                    <br /><br />
 
                 </p>
 
@@ -85,8 +180,6 @@
         </main>
 
     </section>
-
-    <script src="navbar.js"> </script>
 
 </body>
 
