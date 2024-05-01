@@ -8,22 +8,102 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="./storyForm.css">
+
     <title>storyform</title>
 
 </head>
 
 <body>
 
-    <form>
+    <form method="get" action="./FormProcessor2.html">
 
-        <fieldset> <legend> Personal Partciular </legend>
+        <fieldset> <legend> Personal Particular </legend>
 
             <label for="birthdate"> Birth Date: </label>
-            <input type="text" id="birthdate" name="birthdate" placeholder="" required>
+            <input type="text" id="birthdate" name="birthdate" placeholder="dd/mm/yyyy" required>
 
+            <br>
 
+            <label> Gender: </label>
+
+            <br>
+
+            <label for="male"> Male: </label>
+            <input type="radio" id="male" name="gender" value="boy" required>
+
+            <br>
+
+            <label for="female"> Female: </label>
+            <input type="radio" id="female" name="gender" value="girl" required>
+
+            <br>
+
+            <label for="diploma"> Diploma in: </label>
+
+            <br>
+
+            <input list="diplomas" id="diploma" name="diploma" required>
+
+            <datalist id="diplomas">
+
+                <option value="Common ICT"></option>
+                <option value="Business & Financial"></option>
+                <option value="Applied AI & Analytics"></option>
+                <option value="Cybersecurity"></option>
+                <option value="Infocomm & Security"></option>
+                <option value="Information Technology"></option>
+
+            </datalist>
+
+            <br>
+
+            <label for="email"> Email: </label>
+            <input type="email" id="email" name="email" required>
+
+            <br>
+
+            <label for="cnumber" title="8 Digit Telephone Number"> Contact Number: </label>
+            <input type="text" id="cnumber" name="cnumber" title="8 Digit Telephone Number" required>
 
         </fieldset>
+
+        <fieldset>
+            <legend> Preference </legend>
+
+            <label for="page"> Most preferred age: </label>
+            <input type="text" id="page" name="page" value="17" required>
+
+            <br>
+
+            <label for="favcolor"> Favourite Color: </label>
+            <input type="color" id="favcolor" name="favcolor" required>
+
+            <br>
+
+            <label for="activity"> Preferred activity </label>
+            <select name="activity" id="activity" required>
+
+                <option value="Swimming" selected> Swimming </option>
+                <option value="Running"> Running </option>
+                <option value="Basketball"> Basketball </option>
+                <option value="Badminton"> Badminton </option>
+
+            </select>
+
+            <br>
+
+            <label for="favwebsite"> Favourite Website: </label>
+            <input type="text" id="favwebsite" name="favwebsite" placeholder="https://www.youtube.com" required>
+
+            <br>
+
+            <label for="favholilocation"> Favourite Holiday Location </label>
+            <input type="text" id="favholilocation" name="favholilocation" required>
+
+        </fieldset>
+
+        <input type="submit" id="submit" value="Submit">
 
     </form>
 
