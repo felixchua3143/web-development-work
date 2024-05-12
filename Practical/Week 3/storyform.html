@@ -22,7 +22,7 @@
             <legend> Personal Particular </legend>
 
             <label for="bdate"> Birth Date: </label>
-            <input type="text" id="bdate" name="bdate" placeholder="dd/mm/yyyy" required>
+            <input type="date" id="bdate" name="bdate" placeholder="dd/mm/yyyy" required>
 
             <br>
 
@@ -65,7 +65,7 @@
             <br>
 
             <label for="cnumber" title="8 Digit Telephone Number"> Contact Number: </label>
-            <input type="text" id="cnumber" name="cnumber" title="8 Digit Telephone Number" required>
+            <input type="number" id="cnumber" name="cnumber" pattern="{1,8}" title="8 Digit Telephone Number" required>
 
         </fieldset>
 
@@ -73,7 +73,7 @@
             <legend> Preference </legend>
 
             <label for="page"> Most preferred age: </label>
-            <input type="text" id="page" name="page" value="17" required>
+            <input type="number" id="page" name="page" value="17" required>
 
             <br>
 
@@ -95,7 +95,7 @@
             <br>
 
             <label for="favwebsite"> Favourite Website: </label>
-            <input type="text" id="favwebsite" name="favwebsite" placeholder="https://www.youtube.com" required>
+            <input type="url" id="favwebsite" name="favwebsite" placeholder="https://www.youtube.com" required>
 
             <br>
 
