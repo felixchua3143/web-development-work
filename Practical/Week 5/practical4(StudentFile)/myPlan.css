@@ -31,4 +31,6 @@ img{
 
 table{
     margin: auto;
+    width: 70%;
+    border-collapse: collapse;
 }
