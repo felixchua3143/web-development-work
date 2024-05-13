@@ -1,0 +1,27 @@
+caption{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 150%;
+}
+
+table{
+    border-collapse: collapse;
+    border-color: brown;
+}
+
+#heading, #lastRow{
+    background-color: orange;
+    color: white;
+}
+
+tr:nth-child(2n){
+    background-color: rgba(255, 215, 0, 0.3);
+}
+
+td{
+    padding: 30px;
+}
+#meep{
+    padding-left: 2em;
+    font-size: 120%;
+}

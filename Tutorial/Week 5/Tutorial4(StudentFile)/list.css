@@ -1,3 +1,18 @@
 h1{
-    box-shadow: #008B00;
+    text-shadow: 5px 5px 5px #008B00;
+}
+
+.important{
+    background-color: yellow;
+}
+
+.letter{
+    font-weight: bold;
+    color: #008B00;
+    font-size: 150%;
+    font-style: italic;
+}
+.criteria > li{
+    list-style-image: url(./images/vegetable.png);
+    margin-left: 50px;
 }
