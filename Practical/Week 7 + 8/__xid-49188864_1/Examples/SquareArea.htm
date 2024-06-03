@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en" >
+<head>
+<meta charset="utf-8"/>
+<title>Example:Function</title>
+<script>
+function getSquareArea(side) {
+	var area=side*side;
+	return area;
+}
+
+function displayArea() {
+	var side=document.getElementById("side").value;
+	var area=getSquareArea(side);
+	document.getElementById("area").value=area;
+}
+</script>
+</head>
+<body>
+Side of Square:<input type="text" value="0" id="side"/><br/>
+<input type="button" value="calArea" onclick="displayArea();" />
+<br/>
+The area is :<input type="text" readonly id="area"/>
+</body>
+</html>

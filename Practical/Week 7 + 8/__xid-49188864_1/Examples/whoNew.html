@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script type="text/javascript">
+function show() {
+	alert("Nobody!!");
+}
+//window.onload=function (){
+function init() {
+    var specialp=document.getElementById("special");	
+	specialp.addEventListener("mouseover",show);
+}
+document.addEventListener("DOMContentLoaded",init,false);
+</script>
+</head>
+<body>
+<p>Do you know 
+     <span id="special" style="font-size:+2em; color:red" >who</span>
+     am I ?</p>
+</body>
+</html>
