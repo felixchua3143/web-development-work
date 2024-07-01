@@ -1,0 +1,45 @@
+<html>
+<head>
+<script type="text/javascript">
+
+var lightOn=false;
+function onOffLight() {
+   if (!lightOn) {
+	 document.getElementById("lightBulb").style.clip="rect(0px,300px,400px,60px)";
+	 document.getElementById("lightBulb").style.left="0px";
+	 document.getElementById("switch").innerHTML="Swith On";
+	 lightOn=true;
+	}
+	else {
+	 document.getElementById("lightBulb").style.clip="rect(0px,800px,400px,250px)";
+	 document.getElementById("lightBulb").style.left="-250px";
+	 document.getElementById("switch").innerHTML="Swith Off";
+	 lightOn=false;
+	}
+}
+
+</script>
+<style>
+body {
+background-color:black;
+position:relative;
+}
+img {
+	
+	position:absolute;
+	left:0px;
+	clip:rect(0px,300px,400px,60px);
+	
+}
+#switch {
+	position:absolute;
+	left:0px;
+	top:0px;
+	}
+</style>
+</head>
+<body>
+<img id="lightBulb" src="images/lightbulb2.png"/>
+<button  id="switch" onClick="onOffLight()">Switch On</button>
+</body>
+</html>

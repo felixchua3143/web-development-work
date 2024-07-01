@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body {
+	position:relative;
+	margin-left:200px;
+    border:1px solid white;
+}
+
+img{
+	width:120px;
+	height:120px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:100;
+	display:block;
+}
+
+#nothing{
+	width:120px;
+	height:120px;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:100;
+	background-color:white;
+}
+
+#sound {
+	top:200px;
+	font-size:12px;	
+    transition:color 10s, font-size 8s;
+	}
+
+#timer {
+	position:absolute;
+	right:10px;
+}
+</style>
+<script>
+var animalOnStage=null;
+var second=0;
+var animal=[{name:"cat", sound:"meow", showMe:function(){show(this)}, hideMe:function(){hide(this)}}, 
+			{name:"dog", sound:"bark",  showMe:function(){show(this)}, hideMe:function(){hide(this)}},
+			{name:"frog", sound:"croak", showMe:function(){show(this)}, hideMe:function(){hide(this)}}, 
+			{name:"lion", sound:"roar", showMe:function(){show(this)}, hideMe:function(){hide(this)}}];
+
+function show(theAnimal) {	
+	console.log(theAnimal);
+	if (animalOnStage!=null) {
+		animalOnStage.hideMe();
+	}
+	document.getElementById(theAnimal.name).style.zIndex=200;
+	document.getElementById("sound").innerHTML=theAnimal.sound;
+	document.getElementById("sound").style.fontSize="10em";
+	document.getElementById("sound").style.color="red";
+	animalOnStage=theAnimal;
+
+}
+
+function hide(theAnimal) {
+	document.getElementById(theAnimal.name).style.zIndex=100;
+	document.getElementById("sound").innerHTML="";	
+}
+
+function showTimer() {
+    if (second<=3){
+		animal[second].showMe();
+		document.getElementById("timer").innerHTML=second++;
+    }		
+	else {	
+			clearInterval(begin);
+			document.getElementById("sound").innerHTML="Diam Diam!!";
+			document.getElementById("nothing").style.zIndex=300;			
+	}	
+}
+</script>
+</head>
+<body>
+<p id="sound"></p>
+<img id="cat" src="images/cat.jpg" alt="cat">
+<img id="dog" src="images/dog.jpg" alt="dog">
+<img id="frog" src="images/frog.jpg" alt="frog">
+<img id="lion" src="images/lion.jpg" alt="lion">
+<div id="nothing"></div>
+<p id="timer">0</p>
+
+<script>	
+var begin=setInterval("showTimer()",2000);
+</script>
+</body>
+</html>

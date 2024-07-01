@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Object</title>
+
+</head>
+<body>   
+	<script>
+	    var friend={};	
+	    var name=prompt("Your friend's name ?");
+		var contact=prompt("Your friend's contact ?");
+		friend.name=name;
+		friend.contact=contact;
+		
+		for (var info in friend) {
+			document.write(info+":"+friend[info]+"<br>");
+		}
+	</script>
+ </body>
+</html>

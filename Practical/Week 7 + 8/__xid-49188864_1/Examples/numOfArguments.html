@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+<script>
+function testArgument(age){
+	for (i=0; i<arguments.length; i++) {
+		alert(arguments[i]);
+		if (isNan(arguments[i]) ){
+			alert(arguments[i] +" is not a number");
+		}
+	}
+	alert("age is="+age);
+}
+</script>
+</head>
+<body>
+<script>
+testArgument(1);
+testArgument(18,"25A");
+</script>
+</body>
+</html>
