@@ -1,31 +1,34 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="">
-    </head>
-    <body>
 
-        <script async defer>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="">
+</head>
 
-            const student = {};
+<body>
 
-            for (count = 0; count < 4; count++) {
+    <script async defer>
 
-                student.name = prompt("Please enter student's name")
+        const student = {};
 
-                student.score = prompt("Please enter " + student.name + "'s score")
+        for (count = 0; count < 4; count++) {
 
-                document.write( (count + 1) + ". " + student.name + " scored " + student.score + "<br/>")
+            student.name = prompt("Please enter student's name")
 
-            }
+            student.score = prompt("Please enter " + student.name + "'s score")
+
+            document.write((count + 1) + ". " + student.name + " scored " + student.score + "<br/>")
+
+        }
 
 
-        </script>
-    </body>
+    </script>
+</body>
+
 </html>
