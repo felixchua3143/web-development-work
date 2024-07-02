@@ -17,15 +17,17 @@
 
             scores = [67, 90, 88, 70];
 
-            total = scores[0] + scores[1] + scores[2] + scores[3]
+            total = 0
 
-            for(score = 0; score < scores.length; score++){
+            for(count = 0; count < scores.length; count++){
 
-                document.write(scores[score] + "<br/>")
+                document.write(scores[count] + "<br/>")
+
+                total += scores[count]
 
             }
 
-            document.write("<br/>" + "total score is " + total);
+            document.write("The total score is " + total)
 
         </script>
     </body>

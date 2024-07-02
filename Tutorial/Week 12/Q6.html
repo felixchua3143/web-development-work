@@ -14,17 +14,12 @@
 
     <script async defer>
 
-        document.write(Date()); // a)
+        let student = { // a)
+            name: "Ah Meng",
+            mark: 80
+        }
 
-        let date = new Date(); // b)
-
-        let date2 = date.toDateString();
-
-        document.write("<br/>" + date2);
-
-        let date3 = new Date(2000, 1, 28) //c
-
-        document.write("<br/>" + date3)
+        document.write("Name: " + student.name + "<br/> Mark: " + student.mark) // b)
 
     </script>
 
