@@ -14,17 +14,22 @@
 
     <script async defer>
 
-        document.write(Date()); // a)
+        let integers = [1, 1, 1, 1];
 
-        let date = new Date(); // b)
+        sum = 0;
 
-        let date2 = date.toDateString();
+        product = 0;
 
-        document.write("<br/>" + date2);
+        for(count = 0; count < integers.length; count++){
 
-        let date3 = new Date(2000, 1, 28); //c
+            sum += integers[count]
 
-        document.write("<br/>" + date3);
+            product *= integers[count]
+
+        };
+
+        document.write(sum);
+        document.write("<br/>" + product);
 
     </script>
 
