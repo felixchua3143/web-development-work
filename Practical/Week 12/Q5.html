@@ -11,16 +11,20 @@
     </head>
     <body>
 
-
-
         <script async defer>
 
-            students = ["Ali", "Ben Ben", "Cathy", "Darshini"];
+            const student = {};
 
-            for(var student = 0; student < 4; student++){
+            for (count = 0; count < 4; count++) {
 
-                document.write(student + 1 + ". " + students[student] + "<br/>")
+                student.name = prompt("Please enter student's name")
+
+                student.score = prompt("Please enter " + student.name + "'s score")
+
+                document.write( (count + 1) + ". " + student.name + " scored " + student.score + "<br/>")
+
             }
+
 
         </script>
     </body>

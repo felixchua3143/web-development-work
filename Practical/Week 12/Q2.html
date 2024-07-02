@@ -15,14 +15,17 @@
 
         <script async defer>
 
-            scores = [67, 90, 88, 70]
+            scores = [67, 90, 88, 70];
+
+            total = scores[0] + scores[1] + scores[2] + scores[3]
 
             for(score = 0; score < scores.length; score++){
 
-                document.write(scores[score])
+                document.write(scores[score] + "<br/>")
 
             }
 
+            document.write("<br/>" + "total score is " + total);
 
         </script>
     </body>

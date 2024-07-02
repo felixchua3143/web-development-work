@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+
+        <script async defer>
+
+            students = [];
+
+            scores = [];
+
+            for(count = 0; count < 4; count++){
+
+                addName = prompt("Please enter student's name")
+
+                students.push(addName)
+
+            }
+
+            for (count = 0; count < 4; count++) {
+
+                addScore = prompt("Please enter " + students[count] + "'s score")
+
+                scores.push(addScore)
+
+            }
+
+            for (count = 0; count < 4; count++) {
+
+                document.write((count + 1)  + ". " + students[count] + " scored " + scores[count] + "<br/>")
+
+            }
+
+        </script>
+    </body>
+</html>

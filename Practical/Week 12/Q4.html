@@ -11,16 +11,16 @@
     </head>
     <body>
 
-
-
         <script async defer>
 
-            students = ["Ali", "Ben Ben", "Cathy", "Darshini"];
+            const student = {
 
-            for(var student = 0; student < 4; student++){
+                name: "Ali",
+                score: 89
 
-                document.write(student + 1 + ". " + students[student] + "<br/>")
-            }
+            };
+
+            document.write("name: " + student.name + "<br/>" + "score: " + student.score)
 
         </script>
     </body>
