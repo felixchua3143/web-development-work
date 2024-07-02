@@ -14,15 +14,13 @@
 
     <script async defer>
 
-        var marks = [30, 50, 80, 90];
+        document.write(Date()); // a)
 
-        marks[2] = 85; // a)
+        let date = new Date();
 
-        marks.shift(); // b)
+        let date2 = date.toDateString();
 
-        marks.pop(); // c)
-
-        document.write(marks);
+        document.write(date2);
 
     </script>
 

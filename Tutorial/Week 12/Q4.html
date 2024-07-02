@@ -14,15 +14,14 @@
 
     <script async defer>
 
-        var marks = [30, 50, 80, 90];
+        var marks = []; // a)
 
-        marks[2] = 85; // a)
+        marks.push(80); // b)
+        marks.push(68);
+        marks.push(74);
+        marks.push(50);
 
-        marks.shift(); // b)
-
-        marks.pop(); // c)
-
-        document.write(marks);
+        document.write(marks[0] + marks[1] + marks[2] + marks[3]); // c)
 
     </script>
 
