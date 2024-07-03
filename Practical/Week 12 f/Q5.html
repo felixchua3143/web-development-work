@@ -13,25 +13,27 @@
 
 <body>
 
-    <ol>
+    <script async defer>
 
-        <script async defer>
+        let students = [];
 
-            let students = [];
+        let loopCount = 1
 
-            let scores = [];
+        for(var count = 0; count < loopCount; count++){
 
             let student = {};
 
-            let loopCount = 4
+            student.name = prompt("Enter student's name")
 
-            for(var count = 0; count < loopCount; count++){
+            student.score = prompt("Enter " + student.name + "'s score")
 
-            }
+            students.push(student)
 
-        </script>
+        }
 
-    </ol>
+        document.write(student.name + student.score)
+
+    </script>
 
 </body>
 
