@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -14,11 +15,12 @@
 
     <script async defer>
 
-        var friends = ["Ali", "Ben", "Cathy", "Dory"];
+        students = ["Ali", "Ben Ben", "Cathy", "Darshini"];
 
-        document.write(friends[0]); // a)
+        for (var student = 0; student < 4; student++) {
 
-        document.write("<br/>" + friends[friends.length - 1]); // b)
+            document.write(student + 1 + ". " + students[student] + "<br/>")
+        }
 
     </script>
 

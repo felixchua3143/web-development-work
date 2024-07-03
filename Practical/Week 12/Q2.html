@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -15,19 +14,14 @@
 
     <script async defer>
 
-        scores = [67, 90, 88, 70];
+        var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]; // a)
 
-        total = 0
+        document.write(days[6]); // b)
 
-        for (count = 0; count < scores.length; count++) {
-
-            document.write(scores[count] + "<br/>")
-
-            total += scores[count]
-
-        }
-
-        document.write("The total score is " + total)
+        for (var count = 1; day in days;) { // c)
+            document.write()
+            count = + 1
+        };
 
     </script>
 

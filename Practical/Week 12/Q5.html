@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -15,20 +14,20 @@
 
     <script async defer>
 
-        const student = {};
+        document.write(Date()); // a)
 
-        for (count = 0; count < 4; count++) {
+        let date = new Date(); // b)
 
-            student.name = prompt("Please enter student's name")
+        let date2 = date.toDateString();
 
-            student.score = prompt("Please enter " + student.name + "'s score")
+        document.write("<br/>" + date2);
 
-            document.write((count + 1) + ". " + student.name + " scored " + student.score + "<br/>")
+        let date3 = new Date(2000, 1, 28); //c
 
-        }
-
+        document.write("<br/>" + date3);
 
     </script>
+
 </body>
 
 </html>
