@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -14,17 +15,19 @@
 
     <script async defer>
 
-        document.write(Date()); // a)
+        var scores = [67, 90, 88, 70];
 
-        let date = new Date(); // b)
+        let total = 0
 
-        let date2 = date.toDateString();
+        for (count = 0; count < scores.length; count++) {
 
-        document.write("<br/>" + date2);
+            document.write(scores[count] + "<br/>")
 
-        let date3 = new Date(2000, 1, 28); //c
+            total += scores[count]
 
-        document.write("<br/>" + date3);
+        }
+
+        document.write("The total score is " + total)
 
     </script>
 

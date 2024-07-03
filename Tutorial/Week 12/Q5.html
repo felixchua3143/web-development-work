@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -13,27 +12,21 @@
 
 <body>
 
-    <ol>
+    <script async defer>
 
-        <script async defer>
+        document.write(Date()); // a)
 
-            let students = []
+        let date = new Date(); // b)
 
-            let student = {};
+        let date2 = date.toDateString();
 
-            for(count = 0; count < 4; count++){
-                student.name = prompt("Enter student's name")
-            }
+        document.write("<br/>" + date2);
 
+        let date3 = new Date(2000, 1, 28); //c
 
-            for (count = 0; count < 4; count++) {
-                student.score = prompt("Enter " + student.name + "name")
-            }
+        document.write("<br/>" + date3);
 
-
-        </script>
-
-    </ol>
+    </script>
 
 </body>
 

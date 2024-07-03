@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html>
 
 <head>
@@ -12,19 +13,20 @@
 
 <body>
 
-    <script async defer>
+    <ol>
 
-        var marks = [30, 50, 80, 90];
+        <script async defer>
 
-        marks[2] = 85; // a)
+            var students = ["Ali", "Ben Ben", "Cathy", "Darshini"];
 
-        marks.shift(); // b)
+            for (var count = 0; count < 4; count++) {
 
-        marks.pop(); // c)
+                document.write("<li>" + students[count] + "</li>")
+            }
 
-        document.write(marks);
+        </script>
 
-    </script>
+    </ol>
 
 </body>
 

@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
@@ -13,37 +12,19 @@
 
 <body>
 
-    <ol>
+    <script async defer>
 
-        <script async defer>
+        var marks = [30, 50, 80, 90];
 
-            students = [];
+        marks[2] = 85; // a)
 
-            scores = [];
+        marks.shift(); // b)
 
-            for (count = 0; count < 4; count++) {
+        marks.pop(); // c)
 
-                addName = prompt("Please enter student's name")
+        document.write(marks);
 
-                students.push(addName)
-
-            }
-
-            for (count = 0; count < 4; count++) {
-
-                addScore = prompt("Please enter " + students[count] + "'s score")
-
-                scores.push(addScore)
-
-            }
-
-            for (count = 0; count < 4; count++){
-                document.write("<li>" + students[count] + " scored " + scores[count] + "</li>")
-            }
-
-        </script>
-
-    </ol>
+    </script>
 
 </body>
 
