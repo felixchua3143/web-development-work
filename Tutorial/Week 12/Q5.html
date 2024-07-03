@@ -17,28 +17,19 @@
 
         <script async defer>
 
-            const student = {};
+            let students = []
 
-            for (count = 0; count < 4; count++) {
+            let student = {};
 
-                student.name = prompt("Please enter student's name")
-
+            for(count = 0; count < 4; count++){
+                student.name = prompt("Enter student's name")
             }
 
 
             for (count = 0; count < 4; count++) {
-
-                student.score = prompt("Please enter " + student.name + "'s score")
-
-                document.write("<li>" + student.name + " scored " + student.score + "</li>")
-
+                student.score = prompt("Enter " + student.name + "name")
             }
 
-            for (count = 0; count < 4; count++) {
-
-                document.write("<li>" + student.name + " scored " + student.score + "</li>")
-
-            }
 
         </script>
 
