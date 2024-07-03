@@ -13,22 +13,37 @@
 
 <body>
 
-    <script async defer>
+    <ol>
 
-        const student = {};
+        <script async defer>
 
-        for (count = 0; count < 4; count++) {
+            const student = {};
 
-            student.name = prompt("Please enter student's name")
+            for (count = 0; count < 4; count++) {
 
-            student.score = prompt("Please enter " + student.name + "'s score")
+                student.name = prompt("Please enter student's name")
 
-            document.write((count + 1) + ". " + student.name + " scored " + student.score + "<br/>")
-
-        }
+            }
 
 
-    </script>
+            for (count = 0; count < 4; count++) {
+
+                student.score = prompt("Please enter " + student.name + "'s score")
+
+                document.write("<li>" + student.name + " scored " + student.score + "</li>")
+
+            }
+
+            for (count = 0; count < 4; count++) {
+
+                document.write("<li>" + student.name + " scored " + student.score + "</li>")
+
+            }
+
+        </script>
+
+    </ol>
+
 </body>
 
 </html>

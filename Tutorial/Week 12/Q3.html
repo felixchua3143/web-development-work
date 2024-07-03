@@ -13,35 +13,38 @@
 
 <body>
 
-    <script async defer>
+    <ol>
 
-        students = [];
+        <script async defer>
 
-        scores = [];
+            students = [];
 
-        for (count = 0; count < 4; count++) {
+            scores = [];
 
-            addName = prompt("Please enter student's name")
+            for (count = 0; count < 4; count++) {
 
-            students.push(addName)
+                addName = prompt("Please enter student's name")
 
-        }
+                students.push(addName)
 
-        for (count = 0; count < 4; count++) {
+            }
 
-            addScore = prompt("Please enter " + students[count] + "'s score")
+            for (count = 0; count < 4; count++) {
 
-            scores.push(addScore)
+                addScore = prompt("Please enter " + students[count] + "'s score")
 
-        }
+                scores.push(addScore)
 
-        for (count = 0; count < 4; count++) {
+            }
 
-            document.write((count + 1) + ". " + students[count] + " scored " + scores[count] + "<br/>")
+            for (count = 0; count < 4; count++){
+                document.write("<li>" + students[count] + " scored " + scores[count] + "</li>")
+            }
 
-        }
+        </script>
 
-    </script>
+    </ol>
+
 </body>
 
 </html>
