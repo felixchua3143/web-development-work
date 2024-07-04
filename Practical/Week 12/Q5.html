@@ -17,21 +17,26 @@
 
         let students = [];
 
-        let loopCount = 1
+        const student = {};
+
+        let loopCount = 4;
 
         for(var count = 0; count < loopCount; count++){
-
-            let student = {};
-
+1
             student.name = prompt("Enter student's name")
 
             student.score = prompt("Enter " + student.name + "'s score")
 
             students.push(student)
 
-        }
+            if(count < 1){
+                document.write("Name: " + students[count].name + "<br/>" + "Score: " + students[count].score)
+            }
+            else{
+                document.write("<br/>" + "Name: " + students[count].name + "<br/>" + "Score: " + students[count].score)
+            }
 
-        document.write(student.name + student.score)
+        };
 
     </script>
 
