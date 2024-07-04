@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	function chglook()
+	{
+		var x=document.getElementById("mychoice").selectedIndex;
+		
+		if (x==0)  //selectedIndex=0 for lst option selected
+		{
+			alert("Please select an option");
+			
+			}
+		else if (x==1) //selectedIndex=1 for 2nd option selected
+		{
+			var p=document.getElementById("para1");
+			p.style.fontSize="250%";
+			p.style.color="black";
+			p.style.backgroundColor="yellow";		
+			p.style.fontFamily="Georgia";
+		}
+		else //selectedIndex=3 for 3rd option selected
+		{
+			//statements to set the font size to small and 
+			//change the colour scheme something dull
+				
+					
+		}
+	}
+	
+</script>
+</head>
+<body>
+<h1>My First Experience with DOM</h1>
+
+<p id="para1">We can change the look and feel of this paragraph</p>
+<p>
+<select id="mychoice" onchange="chglook();">
+	<option>Select an option</option>
+	<option>Big and Bright</option>
+	<option>Small and dull</option>
+</select>
+</p>
+
+</body>
+</html>
