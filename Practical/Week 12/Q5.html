@@ -15,26 +15,34 @@
 
     <script async defer>
 
-        let students = [];
+        let student = {};
 
-        const student = {};
+        let students = [];
 
         let loopCount = 4;
 
-        for(var count = 0; count < loopCount; count++){
+        for(var count = 0; count < loopCount; count++) {
 1
             student.name = prompt("Enter student's name")
+
+        };
+
+        for (var count = 0; count < loopCount; count++) {
 
             student.score = prompt("Enter " + student.name + "'s score")
 
             students.push(student)
 
-            if(count < 1){
-                document.write("Name: " + students[count].name + "<br/>" + "Score: " + students[count].score)
-            }
-            else{
-                document.write("<br/>" + "Name: " + students[count].name + "<br/>" + "Score: " + students[count].score)
-            }
+        };
+
+        for (var count = 0; count < loopCount; count++) {
+
+        if (count < 1) {
+            document.write("Name: " + students[count].name + " <br />" + "Score: " + students[count].score)
+        }
+        else {
+            document.write("<br />" + "Name: " + students[count].name + "<br />" + "Score: " + students[count].score)
+        };
 
         };
 
