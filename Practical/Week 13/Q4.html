@@ -20,23 +20,25 @@
 
             //prompt to enter a new item
 
-            //use getElementById method to get <ul> element
-
             var item = prompt("Enter new item");
 
+            //use getElementById method to get <ul> element
+
             var list = document.getElementById("hobby");
+
+            //create the <li> element using the createElement method
+
+            var list = document.getElementById("hobby");
+
+            // assign the text (entered by user) to the new item element
 
             var newItem = document.createElement("li");
 
             newItem.innerHTML = item;
 
-            list.append(newItem);
-
-            //create the <li> element using the createElement method
-
-            // assign the text (entered by user) to the new item element
-
             //append the new item element to the <ul> element
+
+            list.append(newItem);
 
         }
 

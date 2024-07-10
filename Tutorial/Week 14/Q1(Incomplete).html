@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<script>
+/*
+* This function will return a response based on the user's preference
+*/
+function getAdvice(bmiOption){
+	var response="";
+	
+	// use switch function on bmiOption
+	________________ { 
+		// if preference is 1,
+		__________: 
+			response = "You are malnutritioned and should eat more.";
+			break;
+		// if preference is 2,
+		__________: /
+			response = "You are in the healthy range. Keep up the good work!";
+			break;
+		// if preference is 3,
+		__________: 
+			response = "You are at moderate risk of being overweight.";
+			break;
+		// else,
+		__________: 
+			response = "You are severely overweight! Please cut down on calories intake and exercise more.";
+	}
+	
+   // return response to the caller of the function
+   __________________; 
+}
+
+/*
+*	This function will display the response (first parameter) 
+*   with the name (second parameter) given. 
+*   Note: Use <span> to display the message on the web page
+*/
+function displayAdvice(health_advice, name) {
+	document.getElementById("myAdvice").innerText=name + ", you are "+ health_advice; 	
+}
+
+</script>
+</head>
+<body>
+<h1>Health advice</h1>
+<span id="myAdvice"></span>
+<script>
+    // write the code to prompt for the name 
+	var name = __________________________________________; 
+	
+	// prompt for bmi range
+	var bmi_range = _________________________________________________; 
+	
+	// complete the code to call the function getAdvice and 
+	// store the return value into str
+	var str = _________________________________ ;  
+	
+	// write the code to call the function displayAdvice 
+	// by passing in the name entered by the user and the advice
+	________________________________;  
+</script>
+</body>
+</html>
