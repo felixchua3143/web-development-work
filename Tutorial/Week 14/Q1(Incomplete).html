@@ -9,26 +9,26 @@ function getAdvice(bmiOption){
 	var response="";
 	
 	// use switch function on bmiOption
-	________________ { 
+	switch(bmiOption) {
 		// if preference is 1,
-		__________: 
+		case 0:
 			response = "You are malnutritioned and should eat more.";
 			break;
 		// if preference is 2,
-		__________: /
+		case 1:
 			response = "You are in the healthy range. Keep up the good work!";
 			break;
 		// if preference is 3,
-		__________: 
+		case 2:
 			response = "You are at moderate risk of being overweight.";
 			break;
 		// else,
-		__________: 
+		case 3:
 			response = "You are severely overweight! Please cut down on calories intake and exercise more.";
 	}
 	
    // return response to the caller of the function
-   __________________; 
+    return response ;
 }
 
 /*
