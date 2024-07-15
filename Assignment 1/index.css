@@ -1,21 +1,24 @@
 * {
   margin: 0;
   padding: 0;
+  color: initial;
+  text-decoration: none;
   font-size: xx-large;
   font-family: "Courier New", Courier, monospace;
-  text-decoration: none;
-  color: initial;
 }
 
 body {
-  background-color: lightblue;
   display: grid;
+  background-color: white;
 }
 
 nav {
-  background-color: black;
   height: 3em;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
+}
+nav a {
+  color: black;
 }/*# sourceMappingURL=index.css.map */
