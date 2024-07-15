@@ -1,22 +1,21 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-size: xx-large;
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-    color: initial;
+* {
+  margin: 0;
+  padding: 0;
+  font-size: xx-large;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: none;
+  color: initial;
 }
 
-body{
-    background-color: rgb(255, 180, 114);
-    display: grid;
+body {
+  background-color: lightblue;
+  display: grid;
 }
 
-nav{
-    background-color: peachpuff;
-    height: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
+nav {
+  background-color: black;
+  height: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=index.css.map */
