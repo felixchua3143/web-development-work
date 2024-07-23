@@ -16,5 +16,10 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1em;
   background-color: pink;
+}
+nav a:hover {
+  color: bisque;
+  transition: 0.15s;
 }/*# sourceMappingURL=index.css.map */
