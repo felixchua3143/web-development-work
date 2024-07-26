@@ -26,4 +26,8 @@ body {
 }
 #navbar .special {
   word-spacing: -0.2em;
-}/*# sourceMappingURL=index.css.map */
+}
+
+main {
+  display: grid;
+}/*# sourceMappingURL=mainSheet.css.map */
