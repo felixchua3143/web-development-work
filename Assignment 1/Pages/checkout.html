@@ -20,22 +20,37 @@
 
             header{
                 text-align: center;
-                font-size: 5em;
+                font-size: 4em;
+                padding-top: 1%;
+                padding-bottom: 1%;
             }
 
             main{
-                display: flex;
-                justify-content: center;
+                height: 80%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-auto-flow: column;
+                justify-items: center;
                 align-items: center;
+                gap: 1.5em;
             }
 
             form{
                 background-color: pink;
-                padding: 1%;
+                width: 20em;
                 border-radius: 10px;
+                padding: 1%;
+            }
+
+            #packageList{
+                background-color: pink;
             }
 
         </style>
+
+        <script src="/Assignment 1/Scripts/packageList.js" async defer>
+
+        </script>
 
         <script src="/Assignment 1/Scripts/index.js" async defer>
 
@@ -67,25 +82,25 @@
 
                         <tr>
                             <td>
-                                <label for="first-name">First Name <input type="textbox" class="inputboxsize" id="first-name" autocomplete="on" placeholder="First name" required></label>
+                                <label for="first-name">First Name: <input type="textbox" class="inputboxsize" id="first-name" autocomplete="on" placeholder="First name" required></label>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <label for="last-name">Last Name <input type="text" class="inputboxsize" id="last-name" autocomplete="on" placeholder="Last name"  required></label>
+                                <label for="last-name">Last Name: <input type="text" class="inputboxsize" id="last-name" autocomplete="on" placeholder="Last name" required></label>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <label for="phone-number"> Phone Number <input type="text" class="inputboxsize" id="phone-number" autocomplete="on" placeholder="Phone Number"  required></label>
+                                <label for="phone-number"> Phone Number: <input type="text" class="inputboxsize" id="phone-number" autocomplete="on" placeholder="Phone Number"  required></label>
                             </td>
                         </tr>
 
                         <tr>
                             <td>
-                                <label for="email">Email <input type="email" class="inputboxsize" id="email" autocomplete="on" placeholder="Email"  required></label>
+                                <label for="email">Email: <input type="email" class="inputboxsize" id="email" autocomplete="on" placeholder="Email"  required></label>
                             </td>
                         </tr>
                     </table>
@@ -144,7 +159,22 @@
 
             </form>
 
-    
+            <section id="packageList">
+
+                <div id="title">
+
+                    <p> Package 1 </p>
+
+                </div>
+
+                <div>
+
+                    <p> $1500 </p>
+
+                </div>
+
+            </section>
+            
         </main>
 
     </body>

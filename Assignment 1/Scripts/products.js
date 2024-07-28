@@ -3,6 +3,7 @@ const products = [
         id: 0,
         name: "Package 1",
         price: 1500,
+        imgSrc: "/Assignment 1/Media/pexels-emma-bauso-1183828-2253870.jpg"
     },
     {
         id: 1,
