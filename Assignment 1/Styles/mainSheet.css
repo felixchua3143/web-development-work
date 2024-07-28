@@ -6,7 +6,7 @@
 }
 
 body {
-  display: grid;
+  height: 100vh;
 }
 
 #navbar {
@@ -26,8 +26,4 @@ body {
 }
 #navbar .special {
   word-spacing: -0.2em;
-}
-
-main {
-  display: grid;
 }/*# sourceMappingURL=mainSheet.css.map */
