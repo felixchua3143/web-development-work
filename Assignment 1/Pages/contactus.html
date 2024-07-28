@@ -19,18 +19,56 @@
         <style>
 
             main{
-                height: 100%;
+                height: 90%;
                 display: grid;
-                grid-template-columns: 0.5fr 1fr;
+                grid-template-columns: 1fr 1fr;
+            }   
+
+            #one{
+                display: flex;
+                align-items: center;
+                justify-content: right;
             }
 
             .wedImg{
-                height: 20em;
+                height: 25em;
+            }
+
+            #two{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-flow: column;
+            }
+
+            #title{
+                font-size: 3em;
             }
 
             #info{
                 background-color: pink;
-                width: 50%;
+                font-size: 2em;
+                display: flex;
+                justify-content: center;
+                flex-flow: column;
+                padding: 1%;
+                border-radius: 10px;
+            }
+
+            .row{
+                display: flex;
+            }
+
+            .icons{
+                height: 1em;
+            }
+
+            p{
+                width: fit-content;
+            }   
+
+            .links{
+                margin-left: 1%;
             }
 
         </style>
@@ -49,25 +87,49 @@
 
         <main>
 
-            <img class="wedImg" src="/Assignment 1/Media/South-Indian-wedding-photography-PA-123.jpg">
+            <section id="one">
+                <img class="wedImg" src="/Assignment 1/Media/South-Indian-wedding-photography-PA-123.jpg">
+            </section>
 
-            <section>
+            <section id="two">
 
-                <div id="title">
+                <p id="title">
 
+                    Contact us at:
 
+                </p>
 
                 </div>
 
                 <div id="info">
 
-                    <div> dfasds </div>
+                    <div class="row" id="number"> 
 
-                    <div> dfasds </div>
+                        <img class="icons" src="/Assignment 1/Media/Icons/phone.png">
+                        
+                        <a class="links" href="tel:96770783"> 9677 0783 </a>
+                    
+                    </div>
 
-                    <div> dfasds </div>
+                    <div class="row" id="website"> 
+
+                        <img class="icons" src="/Assignment 1/Media/Icons/internet.png">
+                        
+                        <!-- <p> insert later </p>  -->
+                    
+                    </div>                    
+
+                    <div class="row" id="email"> 
+
+                        <img class="icons" src="/Assignment 1/Media/Icons/message.png">
+                        
+                        <a class="links" href="mailto:felixchuaphotos@gmail.com"> felixchuaphotos@gmail.com </a>
+                    
+                    </div>
 
                 </div>
+
+                <!-- iframe -->
 
             </section>
 

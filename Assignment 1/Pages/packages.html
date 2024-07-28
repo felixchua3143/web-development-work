@@ -32,15 +32,21 @@
 
             .packageSect{
                 background-color: pink;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                flex-flow: column;
+                padding: 1%;
+            }
+
+            .packageInfo{
                 display: flex;
                 flex-flow: column;
                 align-items: center;
-                padding: 1%;
-                border-radius: 10px;
+                padding-top: 7%;
             }
 
             #packageImg1{
-                background-image: url("/Assignment 1/Media/pexels-emma-bauso-1183828-2253870.jpg");
                 height: 5em;
             }
 
@@ -48,7 +54,14 @@
                 font-size: large;
             }
 
-            
+            .buyBtn{
+                background-color: beige;
+                width: fit-content;                
+                border-radius: 5px;
+                border: 0;
+                cursor: pointer;
+                padding: 5%;
+            }
 
         </style>
 
@@ -74,27 +87,29 @@
             
             <section class="packageSect" id="package1">
 
-                <div id="packageImg1">
+                <img id="packageImg1" src="/Assignment 1/Media/pexels-emma-bauso-1183828-2253870.jpg">
 
+                <div class="packageInfo">
+                    <p class="packageName"> Package 1 </p>
+                    
+                    <p class="packageDesc"> Our cheapest package! It includes: 
+                    
+                    </p>
+                    
+                    <ol>
+                    
+                        <li class="packageItems"> fasdasd </li>
+                        <li class="packageItems"> fasdasd </li>
+                        <li class="packageItems"> fasdasd </li>
+                        <li class="packageItems"> fasdasd </li>
+                        <li class="packageItems"> fasdasd </li>
+                    
+                    </ol>
+                    
+                    <p class="packagePrice"> $2000 </p>
                 </div>
-
-                <p class="packageName"> Package 1 </p>
-
-                <p class="packageDesc"> Our cheapest package! It includes: 
-
-                </p>
-
-                <ol>
-
-                    <li class="packageItems"> fasdasd </li>
-                    <li class="packageItems"> fasdasd </li>
-                    <li class="packageItems"> fasdasd </li>
-                    <li class="packageItems"> fasdasd </li>
-                    <li class="packageItems"> fasdasd </li>
-
-                </ol>
-
-                <p class="packagePrice"> $2000 </p>
+                
+                <input class="buyBtn" type="button" name="buyBtn1" value="Buy!"> 
 
             </section>
 
