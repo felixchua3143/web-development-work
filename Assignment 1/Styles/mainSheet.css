@@ -12,6 +12,10 @@ body {
   height: 100vh;
 }
 
+main {
+  height: 100%;
+}
+
 #navbar {
   height: 3em;
   display: flex;
@@ -23,8 +27,8 @@ body {
   background-color: pink;
 }
 #navbar a:hover {
-  color: bisque;
-  transition: 0.15s;
+  color: palevioletred;
+  transition: 0.1s;
 }
 
 footer {

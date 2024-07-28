@@ -20,10 +20,18 @@
 
             main{
                 height: 100%;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            #one, #two{
+                display: flex;
+                justify-content: center;
+                align-items:center;
             }
 
             #one{
-                display: flex;
+                padding-left: 1%;
             }
 
             .imgDiv{
@@ -32,6 +40,15 @@
 
             .wedImg{
                 height: 50vh;
+            }
+
+            #two{
+                flex-flow: column;
+                font-size: 5em;
+            }
+
+            .links:hover{
+                color:palevioletred;
             }
 
         </style>
@@ -70,11 +87,19 @@
 
             </section>
 
+            <section id="two">
+
+                <p class="titleText"> Felix Chua Photos </p>
+
+                <p class="titleText"> Wedding Photographer </p>
+
+            </section>
+
         </main>
 
         <footer id="footer">
 
-            <p>  </p>
+            
 
         </footer>
 
