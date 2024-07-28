@@ -20,19 +20,35 @@
 
             header{
                 text-align: center;
+                font-size: 5em;
             }
 
             main{
-                height: 100%;
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                gap: 20em;
+                font-size: xx-large;
             }
 
-            table{
+            .packageSect{
                 background-color: pink;
+                display: flex;
+                flex-flow: column;
+                align-items: center;
+                padding: 1%;
+                border-radius: 10px;
             }
+
+            #packageImg1{
+                background-image: url("/Assignment 1/Media/pexels-emma-bauso-1183828-2253870.jpg");
+                height: 5em;
+            }
+
+            .packageDesc, .packageItems{
+                font-size: large;
+            }
+
+            
 
         </style>
 
@@ -50,68 +66,38 @@
 
         <header>
 
-            <p id="headerWords"> Packages </p>
+            <p id="headerText"> Packages </p>
 
         </header>
 
         <main>
-            <table class="packageTable" id="one">
             
-                <tr>
-            
-                    <td> fasa </td>
-            
-                </tr>
-            
-                <tr>
-            
-                    <td> fasa </td>
-            
-                </tr>
-                
-                <tr>
+            <section class="packageSect" id="package1">
 
-                    <td>
+                <div id="packageImg1">
 
-                        <input type="button" name="package1" value="Buy" onclick=""> 
+                </div>
 
-                    </td>
+                <p class="packageName"> Package 1 </p>
 
-                </tr>
-            
-            </table>
-            
-                    <table class="packageTable" id="two">
-            
-                <tr>
-            
-                    <td> fasa </td>
-            
-                </tr>
-            
-                <tr>
-            
-                    <td> fasa </td>
-            
-                </tr>            
-            
-            </table>
-            
-                    <table class="packageTable" id="three">
-            
-                <tr>
-            
-                    <td> fasa </td>
-            
-                </tr>
-            
-                <tr>
-            
-                    <td> fasa </td>
-            
-                </tr>            
-            
-            </table>
+                <p class="packageDesc"> Our cheapest package! It includes: 
+
+                </p>
+
+                <ol>
+
+                    <li class="packageItems"> fasdasd </li>
+                    <li class="packageItems"> fasdasd </li>
+                    <li class="packageItems"> fasdasd </li>
+                    <li class="packageItems"> fasdasd </li>
+                    <li class="packageItems"> fasdasd </li>
+
+                </ol>
+
+                <p class="packagePrice"> $2000 </p>
+
+            </section>
+
         </main>
 
     </body>
