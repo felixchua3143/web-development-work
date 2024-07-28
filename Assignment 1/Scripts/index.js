@@ -1,4 +1,4 @@
-document.getElementsByTagName("navbar").innerHTML =
+document.getElementById("navbar").innerHTML =
             '\
             <a href="./index.html"> Home </a> \
             <a class="special" href="./aboutus.html"> About Us </a> \
